@@ -5,17 +5,15 @@
 'use strict'
 
 /**
- * Check servie worker.
+ * This function converts fahrenheight to celsius
  */
- if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-PWA-Template/sw.js", {
-    scope: "/ICS20-PWA-Template/",
-  })
-}
+ function calculate () {
+  // input
+  const fahrenheit = parseInt(document.getElementById('fahrenheit').value)
 
-/**
- * This function displays an alert.
- */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  // process
+  const celsius = (fahrenheit - 32) * 5 / 9
+
+  // output
+  document.getElementById('celsius').innerHTML = 'Celsius is: ' + celsius.toFixed(0) + '°'
 }
