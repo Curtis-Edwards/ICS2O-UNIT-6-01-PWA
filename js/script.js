@@ -5,6 +5,16 @@
 'use strict'
 
 /**
+ * Check servie worker.
+ */
+ if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-UNIT-6-01-PWA/sw.js", {
+    scope: "/ICS2O-UNIT-6-01-PWA/",
+  })
+}
+
+
+/**
  * This function converts fahrenheight to celsius
  */
  function calculate () {
