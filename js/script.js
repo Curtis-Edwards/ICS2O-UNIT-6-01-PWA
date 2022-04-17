@@ -1,6 +1,6 @@
-// Created by: Curtis Edwards
-// Created on: Sep 2020
-// This file contains the JS functions for index.html
+/* Created by: Curtis Edwards
+   Created on: April 2022
+   This file contains the JS functions for index.html */
 
 'use strict'
 
